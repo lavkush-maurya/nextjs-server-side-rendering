@@ -8,7 +8,7 @@ const PreviousPage = () => {
 
   const handleGoBack = () => {
     const currentUserId = router.query.id; // Get the current user ID from the router query
-    const nextUserId = parseInt(currentUserId, 10) + 1; // Increment the user ID by 1
+    const nextUserId = parseInt(currentUserId, 10) - 1; // Increment the user ID by 1
 
     // Generate the new route with the updated user ID
     const newRoute = `/users/${nextUserId}`;
