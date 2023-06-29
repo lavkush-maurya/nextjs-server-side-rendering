@@ -1,5 +1,5 @@
 
-<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill="#fff" style="padding-left: 2rem;">
        <rect x="20" y="50" width="4" height="10" fill="#fff">
       <animateTransform attributeType="xml"
         attributeName="transform" type="translate"

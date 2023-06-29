@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Preloader from "../components/Pre";
 import { useEffect, useState } from "react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, children }) {
   const [load, updateLoad] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider>
-      <Preloader load={load} />
+      <Preloader load={load}>{children}</Preloader>
       <Component {...pageProps} />
     </ChakraProvider>
   );
